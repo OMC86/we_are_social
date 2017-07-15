@@ -16,10 +16,11 @@ class Product(models.Model):
             "business": settings.PAYPAL_RECEIVER_EMAIL,
             "amount": self.price,
             "currency": "USD",
-            "item_name": "%s-%s" % (self.pk, uuid.uuid4()),
+            "item_name": self.name,
+            "invoice": "%s-%s" % (self.pk, uuid.uuid4()),
             "notify_url": settings.PAYPAL_NOTIFY_URL,
-            "return_url": "%s/paypal-return/" % settings.SITE_URL,
-            "cancel_return": "%s/paypal-cancel/" % settings.SITE_URL
+            "return_url": "%s/paypal-return" % settings.SITE_URL,
+            "cancel_return": "%s/paypal-cancel" % settings.SITE_URL
         }
 
         return PayPalPaymentsForm(initial=paypal_dict)
