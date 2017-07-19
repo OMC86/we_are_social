@@ -14,6 +14,6 @@ STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_mNb1dKaAFoLSHyj2BA
 STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_blRbu4P14RH0LjZMT2jDpwxy')
 
 # Paypal environment variables
-SITE_URL = '<your Heroku URL>'
-PAYPAL_NOTIFY_URL = '<your Heroku URL>/a-very-hard-to-guess-url/'
+SITE_URL = 'code-institute-social.herokuapp.com'
+PAYPAL_NOTIFY_URL = 'code-institute-social.herokuapp.com'
 PAYPAL_RECEIVER_EMAIL = 'christoal-facilitator@outlook.com'
