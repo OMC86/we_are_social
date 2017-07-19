@@ -1,0 +1,74 @@
+[
+{
+    "fields": {
+        "username": "christoal@outlook.com",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": true,
+        "is_staff": true,
+        "last_login": "2017-07-12T03:15:38.710Z",
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$bJezqDBU4vJo$0B/I0SQdS+5MkL2Sc8PbiLyt2lt1CoJ4X3arjgI8sOQ=",
+        "email": "christoal@outlook.com",
+        "date_joined": "2017-07-08T11:07:24.663Z"
+    },
+    "model": "accounts.user",
+    "pk": 1
+},
+{
+    "fields": {
+        "username": "christoal@123.com",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": true,
+        "is_staff": true,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$9ekWExW7Aelf$Ry+6lJbJh8GO4LLvlaBzi+dXmOZQ3n0xs8uBG4eRK+c=",
+        "email": "christoal@123.com",
+        "date_joined": "2017-07-08T11:22:55.198Z"
+    },
+    "model": "accounts.user",
+    "pk": 2
+},
+{
+    "fields": {
+        "username": "christoal@gmail.com",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$v8Z987mC7Q0q$TmNru0UxVS8xE0+tRaBKvmK6qcN/YcUazpWuGVDYiUQ=",
+        "email": "christoal@gmail.com",
+        "date_joined": "2017-07-10T04:10:33.453Z"
+    },
+    "model": "accounts.user",
+    "pk": 3
+},
+{
+    "fields": {
+        "username": "christoal@111.com",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": "2017-07-10T04:11:27.546Z",
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$UpVJUMn7ZoQN$ir06ErB+eoo2ZYPxDp64qRefkBx/QgohgZJRB/iABjg=",
+        "email": "christoal@111.com",
+        "date_joined": "2017-07-10T04:11:04.458Z"
+    },
+    "model": "accounts.user",
+    "pk": 4
+}
+]
