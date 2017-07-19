@@ -21,4 +21,3 @@ class PollSubjectForm(forms.ModelForm):
     class Meta:
         model = PollSubject
         fields = ['name']
-git

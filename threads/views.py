@@ -9,6 +9,7 @@ from django.shortcuts import render, get_object_or_404
 from .forms import ThreadForm, PostForm
 from django.forms import formset_factory
 from polls.forms import PollSubjectForm, PollForm
+from polls.models import PollSubject
 
 
 def forum(request):
@@ -141,3 +142,21 @@ def delete_post(request, thread_id, post_id):
 
     return redirect(reverse('thread', args={thread_id}))
 
+
+@login_required
+def thread_vote(request, thread_id, subject_id):
+    thread = Thread.objects.get(id=thread_id)
+
+    subject = thread.poll.votes.filter(user=request.user)
+
+    if subject:
+        messages.error(request, "You already voted on this!")
+        return redirect(reverse('thread', args={thread_id}))
+
+    subject = PollSubject.objects.get(id=subject_id)
+
+    subject.votes.create(poll=subject.poll, user=request.user)
+
+    messages.success(request, "We've registered your vote!")
+
+    return redirect(reverse('thread', args={thread_id}))
