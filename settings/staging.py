@@ -1,4 +1,5 @@
 from base import *
+import dj_database_url
 
 DEBUG = False
 
@@ -8,6 +9,8 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+DATABASES['default'] = dj_database_url.config("CLEARDB_DATABASE_URL")
 
 # Stripe environment variables
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_mNb1dKaAFoLSHyj2BAcDMl99')
