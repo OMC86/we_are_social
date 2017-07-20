@@ -7,7 +7,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '_34saw!bco()q8$4(_5iyik-+nmr+u7jrsfywjq)guc9+j%==c'
 
 ALLOWED_HOSTS = ['code-institute-social.herokuapp.com', 'http://c6ff2d88.ngrok.io']
-SITE_ID = 2
+SITE_ID = 3
 
 # Application definition
 INSTALLED_APPS = [
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'we_are_social.wsgi.application', 'http://c6ff2d88.ngrok.io'
+WSGI_APPLICATION = 'we_are_social.wsgi.application'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
