@@ -10,7 +10,7 @@ DATABASES = {
     }
 }
 
-DATABASES['default'] = dj_database_url.config("CLEARDB_DATABASE_URL")
+DATABASES['default'] = dj_database_url.parse("CLEARDB_DATABASE_URL")
 
 
 # Stripe environment variables
