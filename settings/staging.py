@@ -2,7 +2,7 @@ from base import *
 import dj_database_url
 
 DEBUG = False
-
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -10,7 +10,10 @@ DATABASES = {
     }
 }
 
-DATABASES['default'] = dj_database_url.config("postgres://kivwfaffzocggt:4deadaaf1500d44d654a006e64ec0d39ba1cd74b8f5a3226667878e08c89aa6e@ec2-79-125-125-97.eu-west-1.compute.amazonaws.com:5432/d3r6t7jgtulhi4")
+DATABASES['default'] = dj_database_url.config("CLEARDB_DATABASE_URL")
+"""
+
+DATABASES = dj_database_url.config("CLEARDB_DATABASE_URL")
 
 # Stripe environment variables
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_mNb1dKaAFoLSHyj2BAcDMl99')
