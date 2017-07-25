@@ -10,6 +10,9 @@ DATABASES = {
     }
 }
 
+DATABASES['default'] = dj_database_url.parse("CLEARDB_DATABASE_URL")
+
+
 # Stripe environment variables
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_mNb1dKaAFoLSHyj2BAcDMl99')
 STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_blRbu4P14RH0LjZMT2jDpwxy')
