@@ -33,7 +33,6 @@ INSTALLED_APPS = [
     'magazines',
     'threads',
     'polls',
-    'settings',
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
