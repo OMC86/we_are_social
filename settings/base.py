@@ -6,7 +6,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: Enter your own SECRET_KEY here
 SECRET_KEY = '_34saw!bco()q8$4(_5iyik-+nmr+u7jrsfywjq)guc9+j%==c'
 
-ALLOWED_HOSTS = ['code-institute-social.herokuapp.com', 'http://c6ff2d88.ngrok.io']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'code-institute-social.herokuapp.com', 'http://c6ff2d88.ngrok.io']
 SITE_ID = 3
 
 # Application definition

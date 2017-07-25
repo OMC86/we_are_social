@@ -4,9 +4,8 @@ import dj_database_url
 DEBUG = False
 
 DATABASES = {
-    'default': dj_database_url.parse(os.getenv('CLEARDB_DATABASE_URL'))
+    'default': dj_database_url.config('CLEARDB_DATABASE_URL')
 }
-
 
 # Stripe environment variables
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_mNb1dKaAFoLSHyj2BAcDMl99')
