@@ -1,0 +1,49 @@
+[
+{
+    "model": "sessions.session",
+    "pk": "5nt70ck6g9ee8kitzbcw7sloqgq7kg05",
+    "fields": {
+        "session_data": "YTlmMDNhNDc4ODI1NzIxZDAxMTBkNGZiMmEwMzBmYTRhNDg3OTk1Nzp7Il9hdXRoX3VzZXJfaGFzaCI6Ijc4YTRjNTRmMTIwMzNmN2I5NmMzMTljNWZhOTc2Y2JiZTU2NThmYTEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+        "expire_date": "2017-07-24T06:28:14.579Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "r7lsztr3n3ceyqv7dpo4v6df7az4tlup",
+    "fields": {
+        "session_data": "YTlmMDNhNDc4ODI1NzIxZDAxMTBkNGZiMmEwMzBmYTRhNDg3OTk1Nzp7Il9hdXRoX3VzZXJfaGFzaCI6Ijc4YTRjNTRmMTIwMzNmN2I5NmMzMTljNWZhOTc2Y2JiZTU2NThmYTEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+        "expire_date": "2017-07-26T03:15:38.714Z"
+    }
+},
+{
+    "model": "sites.site",
+    "pk": 2,
+    "fields": {
+        "domain": "example.com",
+        "name": "example.com"
+    }
+},
+{
+    "model": "sites.site",
+    "pk": 3,
+    "fields": {
+        "domain": "localhost",
+        "name": "localhost"
+    }
+},
+{
+    "model": "flatpages.flatpage",
+    "pk": 1,
+    "fields": {
+        "url": "/pages/about/",
+        "title": "About Me",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, perferendis, vitae! Consectetur, molestiae, veritatis! Error quod tempore voluptas. Debitis eligendi nesciunt nihil placeat provident! Debitis fugiat odit temporibus ut veritatis!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, perferendis, vitae! Consectetur, molestiae, veritatis! Error quod tempore voluptas. Debitis eligendi nesciunt nihil placeat provident! Debitis fugiat odit temporibus ut veritatis!",
+        "enable_comments": false,
+        "template_name": "",
+        "registration_required": false,
+        "sites": [
+            3
+        ]
+    }
+}
+]
